@@ -1,0 +1,72 @@
+{
+    "cabanas": [
+      {
+        "nombre": "Chica",
+        "ubicacion": "Playa",
+        "huespedes": 2,
+        "habitaciones": 1,
+        "baños": 1,
+        "camas": 1,
+        "precio": 1200,
+        "precioAlto": 0,
+        "precioBajo": 0,
+        "disponible": true,
+        "tipo": "Cabaña",
+        "fechasEspeciales": ["2023-07-15", "2023-08-20"],
+        "minimoNoches": 0,
+        "promocion1": false,
+        "promocion2": false,
+        "amenidades": [
+          "Servicio de café",
+          "Asador",
+          "Kit de baño",
+          "Wifi",
+          "*No cuenta con cocina",
+          "Restaurante fines de Semana",
+          "Tirolesa",
+          "Senderismo",
+          "Proceso del Café y Miel",
+          "Vistas a los volcanes y barranca del coyote"
+        ],
+        "reglas": [
+          "No fumar",
+          "No se permiten mascotas"
+        ],
+        "prohibiciones": [
+          "No fiestas",
+          "No eventos"
+        ]
+      },
+      {
+        "nombre": "Cabaña B",
+        "ubicacion": "Montaña",
+        "huespedes": 6,
+        "habitaciones": 3,
+        "baños": 2,
+        "camas": 4,
+        "precio": 120,
+        "precioAlto": 180,
+        "precioBajo": 100,
+        "disponible": false,
+        "tipo": "Montaña",
+        "fechasEspeciales": ["2023-09-10"],
+        "minimoNoches": 3,
+        "promocion1": false,
+        "promocion2": true,
+        "amenidades": {
+          "wifi": true,
+          "tv": true,
+          "aireAcondicionado": true,
+          "cocina": true,
+          "piscina": false
+        },
+        "reglas": [
+          "No fumar"
+        ],
+        "prohibiciones": [
+          "No mascotas"
+        ]
+      }
+    ]
+  }
+  
