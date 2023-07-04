@@ -1,0 +1,22 @@
+---
+interface Props {
+  href: string;
+  pathd: string;
+}
+const { href, pathd } = Astro.props;
+---
+
+<a href={href} class="px-2 py-2.5" target="_blank">
+  <svg
+  class="hover:scale-105"
+    xmlns="http://www.w3.org/2000/svg"
+    width="48"
+    height="48"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d={pathd}
+      fill="black"
+      class="fill-current hover:text-rose-600 cursor-pointer "></path>
+  </svg>
+</a>
