@@ -1,0 +1,61 @@
+---
+const menuitems = [
+  {
+    title: "Cabañas",
+    path: "/volcancafe/cabanas",
+  },
+  {
+    title: "Casas Descanso",
+    path: "/volcancafe/descanso",
+  },
+  {
+    title: "Villas",
+    path: "/volcancafe/villas",
+  },
+  {
+    title: "Hoteles",
+    path: "/volcancafe/hoteles",
+  },
+
+  {
+    title: "Tours",
+    path: "/volcancafe/tours",
+  },
+  { title: "Bodas", path: "/volcancafe/bodas" },
+
+  {
+    title: "Contacto",
+    path: "/volcancafe/contacto",
+  },
+];
+---
+
+<nav class="relative flex items-center justify-center h-96 bg-black">
+  <div class="absolute top-0 left-0 w-full h-full">
+    <video
+      autoplay
+      loop
+      muted
+      class="w-full h-full bg-fixed bg-auto bg-center"
+      src="https://res.cloudinary.com/diiabesnk/video/upload/v1688618043/tflr30wsmo0tsmlbidrd.mp4"
+      style={{
+        maxWidth: "100%",
+        maxHeight: "100%",
+        objectFit: "cover",
+        position: "center",
+      }}></video>
+  </div>
+  <div class="relative z-10">
+    <ul class="flex space-x-4 text-white">
+      <li>
+        <a href="#" class="hover:text-gray-300">Inicio</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Acerca</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
