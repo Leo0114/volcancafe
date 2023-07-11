@@ -1,0 +1,13 @@
+---
+interface Props {
+  para?: string;
+  line?: string;
+}
+const { para, line } = Astro.props;
+---
+
+
+  <p class="text-xl py-6">{para}</p>
+
+  <p class="pb-6">{line}</p>
+
