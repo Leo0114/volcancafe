@@ -5,11 +5,11 @@ interface Props {
   content: string;
   href: string;
 }
-const { src, content, href,  } = Astro.props;
+const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+  class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group hover:drop-shadow-2xl hover:shadow-rose-900 hover:shadow-2xl"
   style={{ backgroundImage: `url('${src}')` }}
 >
   <div
