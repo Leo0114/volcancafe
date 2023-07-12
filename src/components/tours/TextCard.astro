@@ -1,0 +1,44 @@
+---
+interface Props {
+  fecha?: string;
+  lugar?: string;
+  lugar2?: string;
+  fecha2?: string;
+  lugar3?: string;
+  fecha3?: string;
+  fecha4?: string;
+  lugar4?: string;
+}
+const { fecha, lugar, fecha2, fecha3, fecha4, lugar2, lugar3, lugar4 } =
+  Astro.props;
+---
+
+<div class="grid grid-cols-2 grid-rows-2 text-center font-bold gap-8">
+  <div
+    class="object-cover w-full h-full p-2 row-span-1 border-2 border-rose-700 rounded-lg"
+  >
+    <p class="p-2 mt-2 text-2xl">{lugar}</p>
+    <p class="p-4 mt-2 text-xl text-rose-700">{fecha}</p>
+  </div>
+
+  <div
+    class="object-cover w-full h-full p-2 row-span-3 border-2 border-rose-700 rounded-lg"
+  >
+    <p class="p-4 mt-2 text-2xl">{lugar2}</p>
+    <p class="p-4 mt-2 text-xl text-rose-700">{fecha2}</p>
+  </div>
+
+  <div
+    class="object-cover w-full h-full p-2 row-span-1 border-2 border-rose-700 rounded-lg"
+  >
+    <p class="p-4 mt-2 text-2xl">{lugar3}</p>
+    <p class="p-4 mt-2 text-xl text-rose-700">{fecha3}</p>
+  </div>
+
+  <div
+    class="object-cover w-full h-full p-2 row-span-6 border-2 border-rose-700 rounded-lg"
+  >
+    <p class="p-4 mt-2 text-2xl">{lugar4}</p>
+    <p class="p-4 mt-2 text-xl text-rose-700">{fecha4}</p>
+  </div>
+</div>
