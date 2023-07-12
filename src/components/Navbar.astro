@@ -31,15 +31,12 @@ const menuitems = [
     path: "/volcancafe/contacto",
   },
 ];
-interface Props {
-  img?: string;
-}
-const { img } = Astro.props;
+
 ---
 
 <div
   class="p-4 shadow-md items-center bg-center bg-cover bg-local  text-white h-auto lg:h-48 font-bold"
-  style="background-image: url('../images/navb1.jpg') "
+  style="background-image: url('/volcancafe/navb1.jpg') "
 >
   <div class="max-w-screen-xl mx-auto">
     <header class="flex flex-col lg:flex-row justify-between my-5 items-center">
@@ -80,22 +77,3 @@ const { img } = Astro.props;
   </div>
 </div>
 
-<!-- <script is:inline>
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
-  window.localStorage.setItem("theme", theme);
-</script>
- -->

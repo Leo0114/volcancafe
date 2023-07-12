@@ -12,8 +12,8 @@
       "@data/*": [
         "src/data/*"
       ],
-      "@images/*": [
-        "public/images/*"
+      "@assets/*": [
+        "src/assets/*"
       ]
     },
     "jsx": "react-jsx",
