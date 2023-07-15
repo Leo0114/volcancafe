@@ -1,0 +1,292 @@
+{
+  "tours": [
+    {
+      "nombre": "Guardianes del Volcán",
+      "ubicacion": "Comala, Colima",
+      "duracion": "5 horas",
+      "dificultad": "Baja",
+      "clima": "23°C",
+      "precio": "",
+      "Requerimientos": ["Caminatas pequeñas en zonas rurales y naturales"],
+      "distanciaCaminada": "N/A",
+      "tipo": "Tour",
+      "EdadMinima": "N/A",
+      "disponibilidad": "Todo el año",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Alimentos (opcional)",
+        "Hidratación",
+        "Entrada a parajes turísticos",
+        "Entrada a Museos",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección Solar",
+        "Botiquín médico personal",
+        "Mochila para tu pertenencías",
+        "Comida de marcha (Chocolates, cacahuates, ducels)",
+        "Cámara fotográfica"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "amenidades": [
+        "Cocina equipada",
+        "Asador",
+        "TV",
+        "Wifi",
+        "Estacionamiento",
+        "Restaurante (costo extra)",
+        "Renta de Cuatrimotos y Razer (costo extra)",
+        "Spa (costo extra)",
+        "Cafe - Bar (costo extra)",
+        "Vistas a los volcanes y barranca del coyote",
+        "CONTAMOS CON 8 CABAÑAS EN ESTE LUGAR, TODAS SON IDENTICAS Y SE ENCUENTRAN EN UN COMPLEJO PRIVADO DE MONTAÑA. AREAS COMUNES: ASADORES, HAMACAS, FOGATEROS, JARDINES, LAGO, BAR Y RESTAURANTE."
+      ],
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "Parque nacional Nevado de Colima",
+      "ubicacion": "Jalisco",
+      "duracion": "12 horas",
+      "dificultad": "Alta",
+      "clima": "9°C",
+      "precio": "1,500",
+      "Requerimientos": [
+        "La experiencia es un gran reto físico",
+        "Se recomienda para todo aquel que lleva una vida actica",
+        "Que haga ejercicio cardiovacular por lo menos dos veces a la semana"
+      ],
+      "distanciaCaminada": "5 Km",
+      "tipo": "Tour",
+      "EdadMinima": "12 años",
+      "disponibilidad": "Todo el año",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Box Lunch",
+        "Equipo de seguridad",
+        "Hidratación",
+        "Entrada al Parque Nacional",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de gastos médicos",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Ropa para frio",
+        "Protección solar",
+        "Envase de 1 litro",
+        "Botiquín médico personal",
+        "Mochila de ataque para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botas para trekking o tenis de Trail"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "De la Mar a la Montaña",
+      "ubicacion": "Colima | Manzanillo | Nevado de Colima | Villa de Álvarez | Comala",
+      "duracion": "14 horas",
+      "dificultad": "Alta",
+      "clima": "3°C a 32°C",
+      "precio": "",
+      "Requerimientos": ["Caminata prolongada"],
+      "distanciaCaminada": "10 Km",
+      "tipo": "Tour",
+      "EdadMinima": "14 años",
+      "disponibilidad": "Todo el año",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Alimentos",
+        "Hidratación",
+        "Entrada a parajes turísticos",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección solar",
+        "Botiquín médico personal",
+        "Mochila para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botella de agua",
+        "Ropa de calor y frío",
+        "Traje de baño y cambio de ropa",
+        "Cámara fotográfica"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "Mangles y Tortugario",
+      "ubicacion": "Armería, Colima",
+      "duracion": "8 horas",
+      "dificultad": "Baja",
+      "clima": "28°C",
+      "precio": "",
+      "Requerimientos": ["Hidratación constante"],
+      "distanciaCaminada": "N/A",
+      "tipo": "Tour",
+      "EdadMinima": "N/A",
+      "disponibilidad": "Todo el año",
+      "fechaespecial": "Agosto a Diciembre liberación de tortugas",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Alimentos",
+        "Hidratación",
+        "Entrada a parajes turísticos",
+        "Renta de embarcación para visitar el Estero",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección solar",
+        "Botiquín médico personal",
+        "Mochila para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botella de agua",
+        "Ropa para el sol",
+        "Traje de baño y cambio de ropa",
+        "Cámara fotográfica"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "El Terrero y Lagunitas",
+      "ubicacion": "Minatitlán | Comala y Colima",
+      "duracion": "10 horas",
+      "dificultad": "Media",
+      "clima": "13°C",
+      "precio": "",
+      "Requerimientos": ["Caminatas por senderos sinuosos silvestres"],
+      "distanciaCaminada": "12 Km",
+      "tipo": "Tour",
+      "EdadMinima": "N/A",
+      "disponibilidad": "Todo el año",
+      "fechaespecial": "N/A",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Alimentos",
+        "Hidratación",
+        "Entrada a parajes turísticos",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección solar",
+        "Botiquín médico personal",
+        "Mochila para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botella de agua",
+        "Ropa cómoda para caminata",
+        "ropa abrigada",
+        "Cámara fotográfica"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "Cañonismo en el salto",
+      "ubicacion": "Minatitlán, Colima",
+      "duracion": "8 horas",
+      "dificultad": "Media",
+      "clima": "26°C",
+      "precio": "",
+      "Requerimientos": ["Caminatas por río bajo y saltos por cascadas"],
+      "distanciaCaminada": "3 Km",
+      "tipo": "Tour",
+      "EdadMinima": "6",
+      "disponibilidad": "Noviembre a mayo",
+      "fechaespecial": "N/A",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Equipo de protección",
+        "Refrigerio e hidratación",
+        "Entrada a parajes turísticos",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Seguto de gastos médicos",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección solar",
+        "Botiquín médico personal",
+        "Mochila para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botella de agua",
+        "Traje de baño y cambio de ropa",
+        "Cámara fotográfica contra el agua"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    },
+    {
+      "nombre": "Senderismo en Peña Blanca",
+      "ubicacion": "Manzanillo, Colima",
+      "duracion": "8 horas",
+      "dificultad": "Baja - Media",
+      "clima": "28°C",
+      "precio": "",
+      "Requerimientos": ["Caminatas por terrenos sinuosos"],
+      "distanciaCaminada": "8km Km",
+      "EdadMinima": "N/A",
+      "disponibilidad": "Todo el año",
+      "tipo": "Tour",
+      "fechaespecial": "N/A",
+      "maxParticipantes": 24,
+      "minParticipantes": 6,
+      "queIncluye": [
+        "Transportación ida y vuelta",
+        "Equipo de protección",
+        "Refrigerio e hidratación",
+        "Entrada a parajes turísticos",
+        "Guía acreditado por el Gobierno Federal",
+        "Seguro de viajero",
+        "Fotografías digitales"
+      ],
+      "queLlevar": [
+        "Protección solar",
+        "Botiquín médico personal",
+        "Mochila para tus pertenecías",
+        "Comida de marcha (Chocolates, cacahuates, dulces)",
+        "Botella de agua",
+        "Traje de baño y cambio de ropa",
+        "Toalla",
+        "Ropa para el sol",
+        "Cámara fotográfica contra el agua"
+      ],
+
+      "img": "https://res.cloudinary.com/diiabesnk/image/upload/v1689045257/skjdj3z4r2izugxl92tg.jpg",
+      "reglas": ["No especificadas"],
+      "prohibiciones": ["No especificadas"]
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 ---
 import EstanciasImg from "./EstanciasImg.astro";
-
-const menuitems = [{ title: "Bodas", path: "/volcancafe/bodas" }];
+import { estancias } from "@data/estancias";
 ---
 
-<section >
+<section>
   <div class="container px-6 py-10 mx-auto max-w-[1400px]">
     <div>
       <h1
@@ -23,47 +22,16 @@ const menuitems = [{ title: "Bodas", path: "/volcancafe/bodas" }];
     <div
       class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
     >
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067857/zbbgwxelq8fuswhtgmfi.jpg"
-        alt="Imagen cabañas"
-        content="Cabañas"
-        href="/volcancafe/cabanas"
-      />
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067857/s08zqg8msibigeryktc3.jpg"
-        alt="Imagen casas de descanso"
-        content="Casas Descanso"
-        href="/volcancafe/descanso"
-      />
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067858/a7bmlqbqiiob3t4qh4tm.jpg"
-        alt="Imagen villas"
-        content="Villas"
-        href="/volcancafe/villas"
-      />
-    </div>
-
-    <div
-      class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3"
-    >
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067858/hathduhcayz9vqglkbnh.webp"
-        alt="Imagen tours"
-        content="Tours"
-        href="/volcancafe/tours"
-      />
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067858/tyrbaz7gna4nlznwfyhl.jpg"
-        alt="Imagen Bodas"
-        content="Bodas"
-        href="/volcancafe/bodas"
-      />
-      <EstanciasImg
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688067858/ivr5foei8ifr5ox5oant.jpg"
-        alt="Imagen hoteles"
-        content="Hoteles"
-        href="/volcancafe/hoteles"
-      />
+      {
+        estancias.map((estancia) => (
+          <EstanciasImg
+            src={estancia.src}
+            alt={estancia.alt}
+            content={estancia.content}
+            href={estancia.href}
+          />
+        ))
+      }
     </div>
   </div>
 </section>
