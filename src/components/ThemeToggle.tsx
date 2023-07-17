@@ -1,4 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
+import sun from "@assets/svg/sun.svg";
+import moon from "@assets/svg/moon.svg";
 import type { FunctionalComponent } from "preact";
 
 export default function ThemeToggle() {

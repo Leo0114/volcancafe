@@ -13,8 +13,8 @@ import jsonHoteles from "@data/hoteles.json";
         <Tarjeta
           nombre={hotel.nombre}
           lugar={hotel.ubicacion}
-          precio={`$${hotel.precio}`}
-          huespedes={`${hotel.huespedes} huéspedes`}
+          precio={hotel.precio}
+          huespedes={hotel.huespedes}
           href={hotel.img}
         />
       ))
