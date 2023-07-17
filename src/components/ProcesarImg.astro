@@ -1,0 +1,13 @@
+---
+import { layoutImages } from "@data/imagesA";
+
+import { Image } from "astro:assets";
+const images = layoutImages;
+
+interface Props {
+  calidad: string;
+}
+const { calidad } = Astro.props;
+---
+
+<Image src="" quality={calidad} loading="lazy" format="avif" />
