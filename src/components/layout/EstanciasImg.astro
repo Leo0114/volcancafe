@@ -9,7 +9,7 @@ const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group hover:drop-shadow-2xl hover:shadow-rose-900 hover:shadow-2xl"
+  class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group hover:drop-shadow-2xl hover:shadow-amber-900 hover:shadow-2xl"
   style={{ backgroundImage: `url('${src}')` }}
 >
   <div
@@ -18,7 +18,7 @@ const { src, content, href } = Astro.props;
     <h2 class="mt-4 text-xl font-semibold text-white capitalize">
       {content}
     </h2>
-    <p class="mt-2 text-lg tracking-wider text-rose-400 uppercase">
+    <p class="mt-2 text-lg tracking-wider text-amber-400 uppercase">
       <a href={href}>Ir</a>
     </p>
   </div>
