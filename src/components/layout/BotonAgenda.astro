@@ -1,0 +1,13 @@
+---
+interface Props {
+  tag: string;
+  link?: string;
+}
+const { tag, link } = Astro.props;
+---
+
+<button
+  class="mr-4 hover:shadow-xl border dark:border-zinc-200 rounded-lg p-4 text-zinc-50 bg-zinc-800 hover:opacity-90 text-xl font-semibold"
+>
+  <a href={link}> {tag}</a>
+</button>

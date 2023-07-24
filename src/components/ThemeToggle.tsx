@@ -1,7 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
-import sun from "@assets/svg/sun.svg";
-import moon from "@assets/svg/moon.svg";
-import type { FunctionalComponent } from "preact";
+import MoonIcon from "astro-heroicons/solid/Moon.astro";
+import SunIcon from "astro-heroicons/solid/Sun.astro";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");

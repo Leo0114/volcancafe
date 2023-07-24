@@ -1,29 +1,26 @@
 ---
 import CustomImg from "@components/layout/CustomImg.astro";
 import CustomData from "@components/layout/CustomData.astro";
+import BotonAgenda from "@components/layout/BotonAgenda.astro";
 ---
 
 <div class="max-w-[1400px] m-auto py-8 px-4 grid lg:grid-cols-2 gap-4">
-    <CustomImg
-        img1="https://res.cloudinary.com/diiabesnk/image/upload/v1689056672/mqg2ny07ngcnxz1e5vga.jpg"
-        img2="https://res.cloudinary.com/diiabesnk/image/upload/v1689056667/e78idydxlnm7jo0r98k3.png"
-        img3="https://res.cloudinary.com/diiabesnk/image/upload/v1689056664/rv6qfjkubu0y6xseekoj.png    "
-        img4="https://res.cloudinary.com/diiabesnk/image/upload/v1689056661/ibyrmxrqngtrgfncrcyj.jpg"
-        img5="https://res.cloudinary.com/diiabesnk/image/upload/v1689056669/hnndgbjf7vxpokidppex.jpg"
+  <CustomImg
+    img1="https://res.cloudinary.com/diiabesnk/image/upload/v1689056672/mqg2ny07ngcnxz1e5vga.jpg"
+    img2="https://res.cloudinary.com/diiabesnk/image/upload/v1689056667/e78idydxlnm7jo0r98k3.png"
+    img3="https://res.cloudinary.com/diiabesnk/image/upload/v1689056664/rv6qfjkubu0y6xseekoj.png    "
+    img4="https://res.cloudinary.com/diiabesnk/image/upload/v1689056661/ibyrmxrqngtrgfncrcyj.jpg"
+    img5="https://res.cloudinary.com/diiabesnk/image/upload/v1689056669/hnndgbjf7vxpokidppex.jpg"
+  />
+  <div class="flex flex-col h-full justify-center">
+    <h3 class="text-5xl md:text-6xl font-bold">Planea tu próximo viaje</h3>
+    <CustomData
+      para="Contamos con las mejores cabañas con accesos a bordo de carretera, instalaciones seguras y con privacidad. Un clima de montaña súper agradable con excelentes miradores a los volcanes y valles."
+      line="Ponte en contacto con nosotros para verificar disponibilidad y cotizar cualquiera de nuestros servicios."
     />
-    <div class="flex flex-col h-full justify-center">
-        <h3 class="text-5xl md:text-6xl font-bold">Planea tu próximo viaje</h3>
-        <CustomData
-            para="Contamos con las mejores cabañas con accesos a bordo de carretera, instalaciones seguras y con privacidad. Un clima de montaña súper agradable con excelentes miradores a los volcanes y valles."
-            line="Ponte en contacto con nosotros para verificar disponibilidad y cotizar cualquiera de nuestros servicios."
-        />
 
-        <div>
-            <button
-                class="border-black mr-4 hover:shadow-xl border rounded-lg p-2"
-            >
-                <a href="/volcancafe/contacto">Reserva aquí</a>
-            </button>
-        </div>
+    <div>
+      <BotonAgenda link="/volcancafe/contacto" tag="Reserva aquí" />
     </div>
+  </div>
 </div>
