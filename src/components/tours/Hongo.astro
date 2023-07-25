@@ -1,0 +1,40 @@
+---
+import ProcesarImg from "@components/ProcesarImg.astro";
+import images from "@data/imagesA";
+---
+
+<div class="container mt-8 mx-auto md:px-6">
+  <section class="mb-8 text-center md:text-left">
+    <div class="grid items-center gap-x-6 md:grid-cols-2 xl:gap-x-12">
+      <div class="mb-6 md:mb-0">
+        <div
+          class="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          <ProcesarImg
+            imgClass="w-full"
+            alt="hongo img"
+            img={images.hongo}
+            calida="mid"
+          />
+
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"
+          >
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="mb-3 text-2xl font-bold">
+          9° Feria del Hongo 2023 Cerro Grande - El Terrero
+        </h3>
+
+        <p class=" py-2 text-xl">Durante los días 5 y 6 Agosto</p>
+        <p class=" py-2 text-xl">Durante los días 12 y 13 Agosto</p>
+        <p class=" py-2 text-xl">Durante los días 29 y 30 Agosto</p>
+      </div>
+    </div>
+  </section>
+</div>

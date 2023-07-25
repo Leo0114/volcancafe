@@ -1,21 +1,20 @@
 ---
 import SocialIcons from "@components/layout/SocialIcons.astro";
+import ProcesarImg from "@components/ProcesarImg.astro";
+import images from "@data/imagesA";
 ---
 
 <section class="overflow-hidden py-8">
-  <div class="container px-6 mx-auto max-w-[1400px]">
+  <div class="container px-6 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
-      <img
-        alt="Registro nacional de turismo "
-        class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-xl"
-        src="https://res.cloudinary.com/diiabesnk/image/upload/v1688430856/p5tksiuj1u6fmgfca15a.jpg"
+      <ProcesarImg
+        calida="mid"
+        alt="Registro nacional de turismo"
+        imgClass="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-xl"
+        img={images.sectur}
       />
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h1
-          class=" text-3xl title-font font-medium mb-1 "
-        >
-          Sobre nosotros
-        </h1>
+        <h1 class="text-3xl title-font font-medium mb-1">Sobre nosotros</h1>
 
         <p class="leading-relaxed">
           Contamos con nuestro <a
@@ -58,7 +57,7 @@ import SocialIcons from "@components/layout/SocialIcons.astro";
     </div>
   </div>
 
-  <div class="pb-4 ">
+  <div class="pb-4">
     <div class="max-w-6xl px-6 py-4 mx-auto">
       <main
         class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12 md:justify-center"
@@ -76,9 +75,7 @@ import SocialIcons from "@components/layout/SocialIcons.astro";
               <p class="text-xl font-medium tracking-tight">CONACO</p>
             </div>
 
-            <p
-              class="mt-4 text-lg leading-relaxed md:text-xl "
-            >
+            <p class="mt-4 text-lg leading-relaxed md:text-xl">
               Nuestro equipo de trabajo está conformado por personal
               profesional, guías especializados y los mejores prestadores de
               servicios turísticos, también ofrecemos servicio de transporte en
@@ -87,10 +84,11 @@ import SocialIcons from "@components/layout/SocialIcons.astro";
               placentero.
             </p>
           </div>
-          <img
-            class="justify-center rounded-3xl items-center h-[32rem] w-80 md:mx-6 object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
-            src="https://res.cloudinary.com/diiabesnk/image/upload/v1688430856/weatgebl1txnmpvrhfk0.jpg"
-            alt="client photo"
+          <ProcesarImg
+            calida="mid"
+            alt="Canco img"
+            imgClass="justify-center rounded-3xl items-center h-[32rem] w-80 md:mx-6 object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+            img={images.canco}
           />
         </div>
       </main>

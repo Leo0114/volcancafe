@@ -1,9 +1,13 @@
 ---
+import ProcesarImg from "@components/ProcesarImg.astro";
+import images from "@data/imagesA";
 ---
 
 <section>
   <div class="container px-6 py-10 mx-auto">
-    <h1 class="text-2xl font-semibold text-center dark:text-gray-200 lg:text-3xl">
+    <h1
+      class="text-2xl font-semibold text-center dark:text-gray-200 lg:text-3xl"
+    >
       Nuestro Equipo
     </h1>
 
@@ -11,51 +15,57 @@
       class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3 xl:justify-center xl:items-center"
     >
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-1/2 rounded-xl aspect-square"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713038/xmd9chhfsjiafpxft3c6.jpg"
-          alt=""
+        <ProcesarImg
+          imgClass="object-cover w-1/2 rounded-xl aspect-square"
+          img={images.snackBar}
+          alt="Nuestro equipo"
+          calida="mid"
         />
       </div>
 
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-1/2 rounded-xl aspect-square"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713046/qlg9yo83mduimpjygvqv.jpg"
-          alt=""
-        />
+        <ProcesarImg
+        imgClass="object-cover w-1/2 rounded-xl aspect-square"
+        img={images.shambala}
+        alt="Nuestro equipo"
+        calida="mid"
+      />
       </div>
 
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-1/2 rounded-xl aspect-square"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713041/bidmwdmcktaensotokt4.jpg"
-          alt=""
-        />
+        <ProcesarImg
+        imgClass="object-cover w-1/2 rounded-xl aspect-square"
+        img={images.rafael}
+        alt="Nuestro equipo"
+        calida="mid"
+      />
       </div>
 
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover rounded-xl aspect-square w-1/2"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713050/rlkxqyr1fjopvidcg7gu.jpg"
-          alt=""
-        />
+        <ProcesarImg
+        imgClass="object-cover w-1/2 rounded-xl aspect-square"
+        img={images.snackClub}
+        alt="Nuestro equipo"
+        calida="mid"
+      />
       </div>
 
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-1/2 rounded-xl aspect-square"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713056/prj82nrqxkredjnl3s5l.jpg"
-          alt=""
-        />
+        <ProcesarImg
+        imgClass="object-cover w-1/2 rounded-xl aspect-square"
+        img={images.mcEvento}
+        alt="Nuestro equipo"
+        calida="mid"
+      />
       </div>
 
       <div class="flex flex-col items-center">
-        <img
-          class="object-cover rounded-xl aspect-square w-1/2"
-          src="https://res.cloudinary.com/diiabesnk/image/upload/v1688713059/n75gmw2zheb0s6vekv88.jpg"
-          alt=""
-        />
+        <ProcesarImg
+        imgClass="object-cover w-1/2 rounded-xl aspect-square"
+        img={images.teo}
+        alt="Nuestro equipo"
+        calida="mid"
+      />
       </div>
     </div>
   </div>

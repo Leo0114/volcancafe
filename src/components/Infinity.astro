@@ -1,69 +1,79 @@
 ---
+import ProcesarImg from "@components/ProcesarImg.astro";
+import images from "@data/imagesA";
 ---
 
 <div
-  class="relative flex flex-col justify-center overflow-hidden  py-6 sm:py-12 min-h-screen h-screen"
+  class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12 min-h-screen h-screen"
 >
- 
-
   <div class="pointer-events-none relative flex gap-10 overflow-hidden">
     <div
       class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10"
     >
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/s86WhGhp25Y"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda1}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/NoRsyXmHGpI"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda2}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/uEFombN3J5U"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda3}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/MyVH8UVJDBE"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda4}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/IoINVPQe738"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda5}
+        alt="Boda1"
+        calida="low"
       />
     </div>
     <div
       aria-hidden="true"
       class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10"
     >
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/s86WhGhp25Y"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda6}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/NoRsyXmHGpI"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda7}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/uEFombN3J5U"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda8}
+        alt="Boda1"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/MyVH8UVJDBE"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda1}
+        alt="Boda9"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/IoINVPQe738"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda10}
+        alt="Boda1"
+        calida="low"
       />
     </div>
   </div>
@@ -72,60 +82,70 @@
     <div
       class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse]"
     >
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/UOavP_Z38lE"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda11}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/UZe35tk5UoA"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda12}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/7-xmprXdiAk"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda13}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/PV9QQFDB5W8"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda14}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/TSYQ5stQVjg"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda15}
+        alt="Boda11"
+        calida="low"
       />
     </div>
     <div
       aria-hidden="true"
       class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse]"
     >
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/UOavP_Z38lE"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda16}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/UZe35tk5UoA"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda17}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/7-xmprXdiAk"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda18}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/PV9QQFDB5W8"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda19}
+        alt="Boda11"
+        calida="low"
       />
-      <img
-        class="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
-        src="https://source.unsplash.com/TSYQ5stQVjg"
-        alt=""
+      <ProcesarImg
+        imgClass="aspect-square max-w-[clamp(10rem,28vmin,20rem)] rounded-md object-cover shadow-md"
+        img={images.boda2}
+        alt="Boda11"
+        calida="low"
       />
     </div>
   </div>
