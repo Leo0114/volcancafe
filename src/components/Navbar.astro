@@ -3,7 +3,6 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import ThemeToggle from "@components/ThemeToggle";
 import { Image } from "astro:assets";
 import NavImg from "@assets/navImg.webp";
-import NavCover from "@assets/layout/banner.webp";
 
 const menuitems = [
   {
@@ -37,11 +36,11 @@ const menuitems = [
 ---
 
 <div
-  class="p-4 shadow-xl text-white h-auto font-bold bg-gradient-to-bl from-zinc-950 via-lime-950 to-zinc-950
-  "
+  id="xd"
+  class="shadow-xl text-white h-auto font-bold sticky top-0 z-50 bg-gradient-to-bl from-zinc-950 via-lime-950 to-zinc-950"
 >
   <div class="max-w-[1400px] mx-auto">
-    <header class="flex flex-col lg:flex-row justify-between  items-center">
+    <header class="flex flex-col lg:flex-row justify-between items-center">
       <Astronav>
         <div
           class="flex w-full lg:w-auto items-center justify-between lg:justify-between"
@@ -67,11 +66,11 @@ const menuitems = [
         <MenuItems
           class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 backdrop-brightness-100"
         >
-          <ul class="flex flex-col lg:flex-row lg:gap-2">
+          <ul class="flex flex-col lg:flex-row lg:gap-2 pb-4">
             {
               menuitems.map((item) => (
                 <>
-                  <li class="flex lg:px-4 lg:py-8 sm:py-2  ">
+                  <li class="flex lg:px-4 lg:py-8 p-2 px-4">
                     <a
                       href={item.path}
                       class=" hover:underline text-lg  hover:scale-110 duration-300 "
@@ -89,3 +88,13 @@ const menuitems = [
     </header>
   </div>
 </div>
+<script>
+  var element = document.getElementById("xd");
+  onscroll = (event) => {
+    if (window.scrollY == 0) {
+      element.classList.remove("hizoScroll");
+    } else {
+      element.classList.add("hizoScroll");
+    }
+  };
+</script>

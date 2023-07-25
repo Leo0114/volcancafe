@@ -1,13 +1,20 @@
 ---
-import { layoutImages } from "@data/imagesA";
-
 import { Image } from "astro:assets";
-const images = layoutImages;
 
 interface Props {
-  calidad: string;
+  img: ImageMetadata;
+  calida?: string;
+  alt: string;
+  imgClass?: string;
 }
-const { calidad } = Astro.props;
+const { img, calida = "high", alt, imgClass } = Astro.props;
 ---
 
-<Image src="" quality={calidad} loading="lazy" format="avif" />
+<Image
+  src={img}
+  quality={calida}
+  loading="lazy"
+  format="avif"
+  alt={alt}
+  class={imgClass}
+/>

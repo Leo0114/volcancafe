@@ -1,6 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import MoonIcon from "astro-heroicons/solid/Moon.astro";
-import SunIcon from "astro-heroicons/solid/Sun.astro";
+import { DarkSh, MoonSht } from "./LosIconos";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
@@ -19,6 +18,8 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <button onClick={handleClick}>{theme === "light" ? "🌙" : "🌞"}</button>
+    <button onClick={handleClick} className=" mx-4">
+      {theme === "light" ? <MoonSht /> : <DarkSh />}
+    </button>
   );
 }
