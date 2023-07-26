@@ -1,4 +1,6 @@
 ---
+import ProcesarImg from "@components/ProcesarImg.astro";
+
 interface Props {
   src: ImageMetadata;
   alt?: string;
@@ -9,17 +11,47 @@ const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group hover:drop-shadow-xl hover:shadow-amber-900 hover:shadow-2xl shadow-md"
-  style={{ backgroundImage: `url('${src}')` }}
+  class="relative flex w-96 flex-col rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none"
 >
   <div
-    class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
+    class="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group"
   >
-    <h2 class="mt-4 text-xl font-semibold text-white capitalize">
-      {content}
-    </h2>
-    <p class="mt-2 text-lg tracking-wider text-amber-400 uppercase">
-      <a href={href}>Ir</a>
-    </p>
+    <ProcesarImg
+      img={src}
+      imgClass="h-full w-full object-cover shadow-sm  object-cover transition group-hover:scale-125 duration-500"
+      calida="mid"
+      alt="Estancias"
+    />
+    <div
+    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
+  >
+  </div>
+  </div>
+  <div class="p-4">
+    <div class="flex items-center justify-center space-x-2">
+      <p class="block font-sans font-medium leading-relaxed text-2xl">
+        {content}
+      </p>
+      <div>
+        <a
+          href={href}
+          class="w-6 h-6 text-zinc-900 dark:text-zinc-200 leading-relaxed block antialiased transform transition duration-500 hover:scale-110"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="hover:font-bold dark:text-zinc-50"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            ></path>
+          </svg></a
+        >
+      </div>
+    </div>
   </div>
 </div>
