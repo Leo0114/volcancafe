@@ -1,10 +1,12 @@
 ---
+import ProcesarImg from "@components/ProcesarImg.astro";
+
 export interface Props {
   nombre?: string;
-  distancia?: string;
+  distancia: number;
   precio?: string;
-  duracion?: string;
-  href?: string;
+  duracion: number;
+  href?: ImageMetadata;
 }
 
 const { precio, nombre, distancia, href, duracion } = Astro.props;
@@ -16,13 +18,14 @@ const { precio, nombre, distancia, href, duracion } = Astro.props;
   <div
     class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-zinc-500 bg-clip-border shadow-lg shadow-blue-zinc-500/40 group"
   >
-    <img
-      src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    <ProcesarImg
+      img={href}
       alt="Tours"
-      class="object-cover transition group-hover:scale-125 duration-700"
+      imgClass="object-cover transition group-hover:scale-125 duration-700"
+      calida="mid"
     />
     <div
-      class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
+      class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/20"
     >
     </div>
   </div>
@@ -36,12 +39,13 @@ const { precio, nombre, distancia, href, duracion } = Astro.props;
     </div>
     <p class="block text-base leading-relaxed antialiased">
       Recorrido aproximado de <span class="text-lime-600 font-bold">
-        {distancia}</span
-      >
+        {distancia}
+      </span>Km
     </p>
     <p class="block text-base leading-relaxed antialiased">
-      Duración aproximada <span class="text-lime-600 font-bold">{duracion}</span
-      >
+      Duración aproximada <span class="text-lime-600 font-bold"
+        >{duracion}
+      </span>horas
     </p>
 
     <p class="block text-base leading-relaxed antialiased">

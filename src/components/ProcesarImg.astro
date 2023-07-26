@@ -6,9 +6,8 @@ interface Props {
   calida?: string;
   alt: string;
   imgClass?: string;
-  link?: string;
 }
-const { img, calida = "high", alt, imgClass, link } = Astro.props;
+const { img, calida = "high", alt, imgClass } = Astro.props;
 ---
 
 <Image
@@ -18,5 +17,4 @@ const { img, calida = "high", alt, imgClass, link } = Astro.props;
   format="avif"
   alt={alt}
   class={imgClass}
-  href={link}
 />

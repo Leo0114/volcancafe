@@ -1,7 +1,7 @@
 ---
 import ToursTarjeta from "@components/tours/ToursTarjeta.astro";
 
-import jsonVilla from "@data/tours.json";
+import {tours} from "@data/tours";
 ---
 
 
@@ -10,13 +10,13 @@ import jsonVilla from "@data/tours.json";
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
   >
     {
-      jsonVilla.tours.map((tour) => (
+      tours.map((tour) => (
         <ToursTarjeta
           nombre={tour.nombre}
-          distancia={tour.distanciaCaminada}
+          distancia={tour.distancia}
           precio={tour.precio}
           duracion={tour.duracion}
-          href={tour.img}
+          href={tour.imagen}
         />
       ))
     }
