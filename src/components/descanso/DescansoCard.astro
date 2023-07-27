@@ -1,21 +1,21 @@
 ---
 import Tarjeta from "@components/layout/Tarjeta.astro";
 
-import jsonDescanso from "@data/casasDescanso.json";
+import { descanso } from "@data/descanso";
 ---
 
-<div class="container mx-auto px-4 max-w-[1400px] py-8">
+<div class="container px-6 mx-auto py-16">
   <div
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
   >
     {
-      jsonDescanso.CasasDescanso.map((descanso) => (
+      descanso.map((descanso) => (
         <Tarjeta
           nombre={descanso.nombre}
           lugar={descanso.ubicacion}
           precio={descanso.precio}
           huespedes={descanso.huespedes}
-          href={descanso.img}
+          href={descanso.imagen}
         />
       ))
     }
