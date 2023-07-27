@@ -4,20 +4,27 @@ import ToursTarjeta from "@components/tours/ToursTarjeta.astro";
 import { tours } from "@data/tours";
 ---
 
-<div class="container px-6 mx-auto py-16">
-  <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
-  >
-    {
-      tours.map((tour) => (
-        <ToursTarjeta
-          nombre={tour.nombre}
-          distancia={tour.distancia}
-          precio={tour.precio}
-          duracion={tour.duracion}
-          href={tour.imagen}
-        />
-      ))
-    }
+<div class="bg-zinc-100 dark:bg-zinc-800 py-8 px-8 mx-auto">
+  <div class="text-center pb-10">
+    <h1 class="font-bold text-4xl text-zinc-800 dark:text-zinc-300">
+      Tours y Recorridos
+    </h1>
+  </div>
+  <div class="container  mx-auto">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8"
+    >
+      {
+        tours.map((tour) => (
+          <ToursTarjeta
+            nombre={tour.nombre}
+            distancia={tour.distancia}
+            precio={tour.precio}
+            duracion={tour.duracion}
+            href={tour.imagen}
+          />
+        ))
+      }
+    </div>
   </div>
 </div>

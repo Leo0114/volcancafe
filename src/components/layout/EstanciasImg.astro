@@ -11,10 +11,10 @@ const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="relative flex w-96 flex-col rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none"
+  class="relative flex w-96 flex-col rounded-xl bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none bg-zinc-100"
 >
   <div
-    class="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group"
+    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group"
   >
     <ProcesarImg
       img={src}
@@ -23,35 +23,18 @@ const { src, content, href } = Astro.props;
       alt="Estancias"
     />
     <div
-    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
-  >
-  </div>
+      class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
+    >
+    </div>
   </div>
   <div class="p-4">
     <div class="flex items-center justify-center space-x-2">
-      <p class="block font-sans font-medium leading-relaxed text-2xl">
-        {content}
-      </p>
-      <div>
+      <p class="block font-sans font-medium leading-relaxed text-2x">
         <a
-          href={href}
-          class="w-6 h-6 text-zinc-900 dark:text-zinc-200 leading-relaxed block antialiased transform transition duration-500 hover:scale-110"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="hover:font-bold dark:text-zinc-50"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-            ></path>
-          </svg></a
+          class="hover:text-lime-800 underline-offset-4 hover:underline"
+          href={href}>{content}</a
         >
-      </div>
+      </p>
     </div>
   </div>
 </div>

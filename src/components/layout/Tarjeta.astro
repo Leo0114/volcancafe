@@ -16,12 +16,12 @@ const { precio, nombre, lugar, href, huespedes } = Astro.props;
   class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200"
 >
   <div
-    class="relative mx-4 mt-4 overflow-hidden rounded-xl bg-blue-zinc-500 bg-clip-border shadow-lg shadow-blue-zinc-500/40 group"
+    class="relative mx-2 mt-2 overflow-hidden rounded-xl bg-blue-zinc-500 bg-clip-border shadow-lg shadow-blue-zinc-500/40 group"
   >
     <ProcesarImg
       img={href}
       alt="Estancias"
-      imgClass="object-cover transition group-hover:scale-125 duration-700"
+      imgClass="h-56 object-cover transition group-hover:scale-125 duration-500 shadow-md"
       calida="mid"
     />
     <div
