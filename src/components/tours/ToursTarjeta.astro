@@ -13,7 +13,7 @@ const { precio, nombre, distancia, href, duracion } = Astro.props;
 ---
 
 <div
-  class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-zinc-50 bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200"
+  class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-zinc-50 bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 transition-colors"
 >
   <div
     class="relative overflow-hidden rounded-xl bg-blue-zinc-500 bg-clip-border shadow-blue-zinc-500/40 group mx-2 mt-2"
@@ -39,18 +39,25 @@ const { precio, nombre, distancia, href, duracion } = Astro.props;
       </h5>
     </div>
     <p class="block text-base leading-relaxed antialiased">
-      Recorrido aproximado de <span class="text-lime-600 font-bold">
+      Recorrido aproximado de <span
+        class="text-lime-600 font-bold dark:text-lime-400"
+      >
         {distancia}
       </span>Km
     </p>
     <p class="block text-base leading-relaxed antialiased">
-      Duración aproximada <span class="text-lime-600 font-bold"
+      Duración aproximada <span
+        class="text-lime-600 font-bold dark:text-lime-400"
         >{duracion}
       </span>horas
     </p>
 
-    <p class="block text-base leading-relaxed antialiased">
-      <span class="font-bold text-lime-600">$</span>{precio}
-    </p>
+    <div class="flex items-center justify-between py-2">
+      <span class="font-bold text-lime-600 dark:text-lime-400">${precio}</span>
+      <button 
+        class="dark:bg-zinc-500 dark:text-zinc-200 px-2 py-1 text-md font-bold text-zinc-900 transition-colors duration-300 transform bg-white rounded hover:bg-zinc-200 focus:bg-zinc-400 focus:outline-none"
+        > <a href="#">Ver detalles</a></button
+      >
+    </div>
   </div>
 </div>

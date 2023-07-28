@@ -1,12 +1,11 @@
-import sanMarcos from "@assets/hotel/sanMarcos.webp";
-import centro from "@assets/hotel/centro.webp";
-import boutique from "@assets/layout/hoteles.webp";
-
+import alcatras from "@assets/layout/villas.webp"
+import bugan from "@assets/villas/bugambilia.webp"
+import laurel from "@assets/villas/Laurel.webp"
 export const procesarVillas = (villas: any) => {};
 
 export const villas = [
   {
-    imagen: sanMarcos,
+    imagen: alcatras,
     nombre: "Alcatraces",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 4,
@@ -26,7 +25,7 @@ export const villas = [
     reglas: [""],
   },
   {
-    imagen: centro,
+    imagen: bugan,
     nombre: "Buganvilias",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 6,
@@ -46,7 +45,7 @@ export const villas = [
     reglas: [""],
   },
   {
-    imagen: boutique,
+    imagen: laurel,
     nombre: "Laureles",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 4,

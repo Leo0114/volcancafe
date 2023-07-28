@@ -24,7 +24,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-zinc-50 dark:text-zinc-200 dark:bg-zinc-900 text-zinc-800">
+  <body
+    class="transition-colors duration-200 bg-zinc-50 dark:text-zinc-200 dark:bg-zinc-900 text-zinc-800"
+  >
     <Navbar />
     <Intro />
     <Plan />
@@ -52,5 +54,5 @@ if (theme === "light") {
 } else {
   document.documentElement.classList.add("dark");
 }
-window.localStorage.setItem("theme", theme);
+  window.localStorage.setItem("theme", theme);
 </script>

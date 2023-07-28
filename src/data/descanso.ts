@@ -1,11 +1,15 @@
-import sanMarcos from "@assets/hotel/sanMarcos.webp";
-
+import titanic from "@assets/layout/camastros.webp";
+import donChuy from "@assets/descanso/donChuy.webp";
+import real from "@assets/descanso/realComala.webp";
+import serenity from "@assets/descanso/serenity.webp";
+import jp1 from "@assets/descanso/JuanP1.webp";
+import jp2 from "@assets/descanso/JuanP2.webp";
 
 export const procesarDescando = (descanso: any) => {};
 
 export const descanso = [
   {
-    imagen: sanMarcos,
+    imagen: titanic,
     nombre: "Titanic",
     ubicacion: "Colima",
     huespedes: 26,
@@ -33,7 +37,7 @@ export const descanso = [
     reglas: [""],
   },
   {
-    imagen: sanMarcos,
+    imagen: donChuy,
     nombre: "Don Chuy ",
     ubicacion: "Cofradía de Suchitlán",
     huespedes: 6,
@@ -53,7 +57,7 @@ export const descanso = [
     reglas: [""],
   },
   {
-    imagen: sanMarcos,
+    imagen: real,
     nombre: "Real Comala",
     ubicacion: "Comala",
     huespedes: 12,
@@ -88,7 +92,7 @@ export const descanso = [
     reglas: [""],
   },
   {
-    imagen: sanMarcos,
+    imagen: serenity,
     nombre: "Serenity",
     ubicacion: "Suchitlán, Comala",
     huespedes: 6,
@@ -117,7 +121,7 @@ export const descanso = [
     reglas: [""],
   },
   {
-    imagen: sanMarcos,
+    imagen: jp1,
     nombre: "Juan Pablo 1",
     ubicacion: "Suchitlán, Comala",
     huespedes: 2,
@@ -137,7 +141,7 @@ export const descanso = [
     reglas: [""],
   },
   {
-    imagen: sanMarcos,
+    imagen: jp2,
     nombre: "Juan Pablo 2",
     ubicacion: "Suchitlán, Comala",
     huespedes: 4,

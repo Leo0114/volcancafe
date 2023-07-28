@@ -1,29 +1,27 @@
 ---
 import Tarjeta from "@components/layout/Tarjeta.astro";
-
 import { cabanas } from "@data/cabanas";
 ---
 
-<div class="bg-zinc-100 dark:bg-zinc-800 py-8 px-8 mx-auto  min-h-screen">
+<div class="bg-zinc-100 dark:bg-zinc-800 py-16 px-8 mx-auto">
   <div class="text-center pb-10">
-    <h1 class="font-bold text-4xl text-zinc-800 dark:text-zinc-300">
-      Cabañas
-    </h1>
+    <h1 class="font-bold text-4xl text-zinc-800 dark:text-zinc-300 underline underline-offset-8">Cabañas</h1>
   </div>
-  <div class="container  mx-auto">
+  <div class="container mx-auto">
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8"
     >
-    {
-      cabanas.map((cabana) => (
-        <Tarjeta
-          nombre={cabana.nombre}
-          lugar={cabana.ubicacion}
-          precio={cabana.precio}
-          huespedes={cabana.huespedes}
-          href={cabana.imagen}
-        />
-      ))
-    }
+      {
+        cabanas.map((cabana) => (
+          <Tarjeta
+            nombre={cabana.nombre}
+            lugar={cabana.ubicacion}
+            precio={cabana.precio}
+            huespedes={cabana.huespedes}
+            href={cabana.imagen}
+          />
+        ))
+      }
+    </div>
   </div>
 </div>

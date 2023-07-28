@@ -11,10 +11,10 @@ const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="relative flex w-96 flex-col rounded-xl bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none bg-zinc-100"
+  class="relative flex w-96 flex-col rounded-xl bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none bg-zinc-100 transition-colors duration-200"
 >
   <div
-    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group"
+    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group transition-colors duration-200"
   >
     <ProcesarImg
       img={src}
