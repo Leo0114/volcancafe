@@ -1,3 +1,31 @@
+/*Cabañas */
+import planCabana from "@assets/cabana/cabanabanner.webp";
+import planCabana2 from "@assets/cabana/cabanaBanner2.webp";
+import planCabana3 from "@assets/cabana/cabanaBanner3.webp";
+import planCabana4 from "@assets/cabana/cabanaBanner4.webp";
+import planCabana5 from "@assets/cabana/cabanaBanner5.webp";
+
+/*CasasDescaso */
+import planDescanso from "@assets/descanso/descansoBanner.webp";
+import planDescanso2 from "@assets/descanso/descansoBanner2.webp";
+import planDescanso3 from "@assets/descanso/descansoBanner3.webp";
+import planDescanso4 from "@assets/descanso/descansoBanner4.webp";
+import planDescanso5 from "@assets/descanso/descansoBanner5.webp";
+
+/*Hoteles */
+import planHotel from "@assets/hotel/hotelBanner.webp";
+import planHotel2 from "@assets/hotel/hotelBanner2.webp";
+import planHotel3 from "@assets/hotel/hotelBanner3.webp";
+import planHotel4 from "@assets/hotel/hotelBanner4.webp";
+import planHotel5 from "@assets/hotel/hotelBanner5.webp";
+
+/*Villas */
+import planVilla from "@assets/villas/villasbanner.webp";
+import planVilla2 from "@assets/villas/villasBanner2.webp";
+import planVilla3 from "@assets/villas/VillasBanner3.webp";
+import planVilla4 from "@assets/villas/villasBanner4.webp";
+import planVilla5 from "@assets/villas/villasBaner5.webp";
+
 /*Bodas  */
 import boda1 from "@assets/boda/boda1.webp";
 import boda2 from "@assets/boda/dos.webp";
@@ -46,6 +74,30 @@ import isla from "@assets/tour/islaCocinas.webp";
 import guardias from "@assets/tour/losGuardias.webp";
 
 const images = {
+  planHotel: planHotel,
+  planHotel2: planHotel2,
+  planHotel3: planHotel3,
+  planHotel4: planHotel4,
+  planHotel5: planHotel5,
+
+  planCabana: planCabana,
+  planCabana2: planCabana2,
+  planCabana3: planCabana3,
+  planCabana4: planCabana4,
+  planCabana5: planCabana5,
+
+  planDescanso: planDescanso,
+  planDescanso2: planDescanso2,
+  planDescanso3: planDescanso3,
+  planDescanso4: planDescanso4,
+  planDescanso5: planDescanso5,
+
+  planVilla: planVilla,
+  planVilla2: planVilla2,
+  planVilla3: planVilla3,
+  planVilla4: planVilla4,
+  planVilla5: planVilla5,
+
   boda1: boda1,
   boda2: boda2,
   boda3: boda3,

@@ -1,12 +1,18 @@
 ---
 import CabanasCard from "@components/cabanas/CabanasCard.astro";
 import LayoutTwo from "@layouts/LayoutTwo.astro";
-import CustomPlanCabanas from "@components/cabanas/CustomPlanCabanas.astro"
-
-
+import PlanAll from "@components/PlanAll.astro";
+import images from "@data/imagesA";
 ---
 
 <LayoutTwo title="Cabañas">
-  <CabanasCard/>
-  <CustomPlanCabanas/>
+  <CabanasCard />
+  <PlanAll
+    para="Contamos con las mejores cabañas con accesos a bordo de carretera, instalaciones seguras y con privacidad. Un clima de montaña súper agradable con excelentes miradores a los volcanes y valles."
+    imagen={images.planCabana}
+    imagen2={images.planCabana2}
+    imagen3={images.planCabana3}
+    imagen4={images.planCabana4}
+    imagen5={images.planCabana5}
+  />
 </LayoutTwo>

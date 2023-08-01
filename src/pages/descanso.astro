@@ -1,11 +1,18 @@
 ---
 import DescansoCard from "@components/descanso/DescansoCard.astro";
 import LayoutTwo from "@layouts/LayoutTwo.astro";
-import CustomPlanDescanso from "@components/descanso/CustomPlanDescanso.astro";
-
+import PlanAll from "@components/PlanAll.astro";
+import images from "@data/imagesA";
 ---
 
 <LayoutTwo title="Casas Descanso">
   <DescansoCard />
-  <CustomPlanDescanso/>
+  <PlanAll
+  para="Contamos con las mejores casas de descanso con instalaciones seguras y privacidad. Un clima de montaña súper agradable y algunas con albercas climatizadas."
+  imagen={images.planDescanso}
+  imagen2={images.planDescanso2}
+  imagen3={images.planDescanso3}
+  imagen4={images.planDescanso4}
+  imagen5={images.planDescanso5}
+/>
 </LayoutTwo>

@@ -1,10 +1,18 @@
 ---
-import CustomPlan from "@components/hoteles/CustomPlan.astro";
 import HotelesCard from "@components/hoteles/HotelesCard.astro";
 import LayoutTwo from "@layouts/LayoutTwo.astro";
+import PlanAll from "@components/PlanAll.astro";
+import images from "@data/imagesA";
 ---
 
 <LayoutTwo title="Hoteles">
   <HotelesCard />
-  <CustomPlan />
+  <PlanAll
+    para="Contamos con villas con un concepto moderno desde 2 personas y hasta 4 personas con accesos a bordo de carretera, instalaciones seguras y con privacidad. Un clima de montaña agradable con excelentes miradores a los volcanes y cerca de cafeterías artesanales."
+    imagen={images.planHotel}
+    imagen2={images.planHotel2}
+    imagen3={images.planHotel3}
+    imagen4={images.planHotel4}
+    imagen5={images.planHotel5}
+  />
 </LayoutTwo>

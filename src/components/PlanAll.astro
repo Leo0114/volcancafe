@@ -1,0 +1,58 @@
+---
+import BotonAgenda from "@components/layout/BotonAgenda.astro";
+import ProcesarImg from "@components/ProcesarImg.astro";
+
+interface Props {
+  para: string;
+  imagen: ImageMetadata;
+  imagen2: ImageMetadata;
+  imagen3: ImageMetadata;
+  imagen4: ImageMetadata;
+  imagen5: ImageMetadata;
+}
+const { para,  imagen, imagen2, imagen3, imagen4, imagen5 } = Astro.props;
+---
+
+<div class="max-w-[1400px] m-auto py-10 px-4 grid lg:grid-cols-2 gap-12 animate-fade-up animate-once animate-ease-in">
+  <div class="flex flex-col h-full justify-center">
+    <h3 class="text-5xl md:text-6xl font-bold">Planea tu próximo viaje</h3>
+    <p class="text-xl py-6">{para}</p>
+    <p class="pb-6">Ponte en contacto con nosotros para verificar disponibilidad y cotizar cualquiera de nuestros servicios.</p>
+    <div>
+      <BotonAgenda link="/volcancafe/contacto" tag="Reserva aquí" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 grid-rows-6 h-[80vh]">
+    <ProcesarImg
+      img={imagen}
+      imgClass="row-span-3 object-cover w-full h-full p-2 rounded-xl"
+      calida="mid"
+      alt="Viaje img"
+    />
+    <ProcesarImg
+      img={imagen2}
+      imgClass="object-cover w-full h-full p-2 row-span-2 rounded-xl"
+      calida="low"
+      alt="Viaje img"
+    />
+    <ProcesarImg
+      img={imagen3}
+      imgClass="object-cover w-full h-full p-2 row-span-2 rounded-xl"
+      calida="low"
+      alt="Viaje img"
+    />
+    <ProcesarImg
+      img={imagen4}
+      imgClass="object-cover w-full h-full p-2 row-span-3 rounded-xl"
+      alt="Viaje img"
+      calida="mid"
+    />
+    <ProcesarImg
+      img={imagen5}
+      imgClass="object-cover w-full h-full p-2 row-span-2 rounded-xl"
+      calida="low"
+      alt="Viaje img"
+    />
+  </div>
+</div>

@@ -3,26 +3,30 @@ import Tarjeta from "@components/layout/Tarjeta.astro";
 
 import { hoteles } from "@data/hoteles";
 ---
-<div class="bg-zinc-100 dark:bg-zinc-800 py-16 px-8 mx-auto ">
+
+<div class="px-8 mx-auto animate-fade-up animate-once animate-ease-in py-12">
   <div class="text-center pb-10">
-    <h1 class="font-bold text-4xl text-zinc-800 dark:text-zinc-300 underline underline-offset-8">
+    <h1
+      class="transition-colors duration-200 font-bold text-4xl text-zinc-800 dark:text-zinc-300 underline underline-offset-8"
+    >
       Hoteles
     </h1>
   </div>
-  <div class="container  mx-auto">
+  <div class="container mx-auto">
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8"
     >
-    {
-      hoteles.map((hotel) => (
-        <Tarjeta
-          nombre={hotel.nombre}
-          lugar={hotel.ubicacion}
-          precio={hotel.precio}
-          huespedes={hotel.huespedes}
-          href={hotel.imagen}
-        />
-      ))
-    }
+      {
+        hoteles.map((hotel) => (
+          <Tarjeta
+            nombre={hotel.nombre}
+            lugar={hotel.ubicacion}
+            precio={hotel.precio}
+            huespedes={hotel.huespedes}
+            href={hotel.imagen}
+          />
+        ))
+      }
+    </div>
   </div>
 </div>
