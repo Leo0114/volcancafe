@@ -46,8 +46,11 @@ const menuitems = [
       >
         {
           menuitems.map((item) => (
-            <li>
-              <a class="mx-4 text-sm " href={item.path} >
+            <li class="w-full md:w-auto md:mx-4 mb-6">
+              <a
+                class="block text-sm md:inline-block md:text-base"
+                href={item.path}
+              >
                 {item.title}
               </a>
             </li>
