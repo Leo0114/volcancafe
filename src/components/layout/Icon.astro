@@ -7,14 +7,19 @@ interface Props {
 const { href, pathd, colore } = Astro.props;
 ---
 
-<a href={href} class="px-2 py-2.5" target="_blank">
+<a
+  href={href}
+  class="px-2 py-2.5"
+  target="_blank"
+  aria-label="Redes Sociales Volcán y Café Agencia Turística"
+>
   <svg
-    class="hover:scale-110 "
+    class="hover:scale-110"
     xmlns="http://www.w3.org/2000/svg"
     width="48"
     height="48"
     viewBox="0 0 24 24"
   >
-    <path d={pathd} fill={colore} class="cursor-pointer "></path>
+    <path d={pathd} fill={colore} class="cursor-pointer"></path>
   </svg>
 </a>
