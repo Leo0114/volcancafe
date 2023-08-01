@@ -4,7 +4,9 @@ import ProcesarImg from "@components/ProcesarImg.astro";
 import images from "@data/imagesA";
 ---
 
-<section class="overflow-hidden py-12 animate-fade-up animate-once animate-ease-in">
+<section
+  class="overflow-hidden py-12 animate-fade-up animate-once animate-ease-in"
+>
   <div class="container px-6 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <ProcesarImg
@@ -14,9 +16,9 @@ import images from "@data/imagesA";
         img={images.sectur}
       />
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-        <h1 class="text-3xl title-font font-medium mb-1">Sobre nosotros</h1>
+        <h1 class="text-4xl title-font font-medium mb-1">Sobre nosotros</h1>
 
-        <p class="leading-relaxed">
+        <p class="leading-relaxed text-lg">
           Contamos con nuestro <a
             class="text-lime-700 font-bold underline"
             href="http://rnt.sectur.gob.mx/Grd_TurGenerales/"
@@ -27,7 +29,7 @@ import images from "@data/imagesA";
           (CANACO) (SERVYTUR). Por ello somos una empresa totalmente confiable y
           segura.
         </p>
-        <p>
+        <p class="text-lg">
           Llamanos directamente: <a
             href="tel:+523122707569"
             class="text-lime-700 font-bold">+52 312 270 75 69</a

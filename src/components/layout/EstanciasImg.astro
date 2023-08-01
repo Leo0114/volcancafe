@@ -11,10 +11,10 @@ const { src, content, href } = Astro.props;
 ---
 
 <div
-  class="relative flex w-96 flex-col rounded-xl bg-clip-border text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 border-2 border-zinc-300 dark:border-none bg-zinc-100 transition-colors duration-200"
+  class="relative flex  flex-col rounded-xl  text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 bg-zinc-100 transition-colors duration-200 w-auto"
 >
   <div
-    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100 bg-clip-border text-zinc-800 group transition-colors duration-200"
+    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100  text-zinc-800 group transition-colors duration-200"
   >
     <ProcesarImg
       img={src}
@@ -31,7 +31,7 @@ const { src, content, href } = Astro.props;
     <div class="flex items-center justify-center space-x-2">
       <p class="block font-sans font-medium leading-relaxed text-2x">
         <a
-          class="hover:text-lime-800 underline-offset-4 hover:underline"
+          class="hover:text-lime-700 underline-offset-4 hover:underline dark:text-lime-500"
           href={href}>{content}</a
         >
       </p>
