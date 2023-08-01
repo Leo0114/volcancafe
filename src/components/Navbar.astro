@@ -45,14 +45,17 @@ const menuitems = [
         <div
           class="flex w-full lg:w-auto items-center justify-between lg:justify-between"
         >
-          <a href="/volcancafe/" class="text-2xl flex items-center">
+          <a
+            href="/volcancafe/"
+            class="text-2xl flex items-center"
+            aria-label="Index Volcán y café - Agencia Turística"
+          >
             <Image
-              alt="Navbar image"
+              alt="Navbar Logo"
               quality="low"
               format="avif"
               src={NavImg}
               class="xl:w-1/5 md:block flex sm:w-1/2 sm:mx-auto xl:mx-0"
-              href="/volcancafe/"
             />
             <span class="sm:hidden md:inline hidden"
               >Volcán & Café - Agencia Turística</span
@@ -69,7 +72,7 @@ const menuitems = [
           <ul class="flex flex-col lg:flex-row lg:gap-2 pb-4">
             {
               menuitems.map((item) => (
-                <>
+                <ul>
                   <li class="flex lg:px-4 lg:py-8 p-2 px-4">
                     <a
                       href={item.path}
@@ -78,7 +81,7 @@ const menuitems = [
                       {item.title}
                     </a>
                   </li>
-                </>
+                </ul>
               ))
             }
             <ThemeToggle client:load />
@@ -88,13 +91,3 @@ const menuitems = [
     </header>
   </div>
 </div>
-<script>
-  var element = document.getElementById("xd");
-  onscroll = (event) => {
-    if (window.scrollY == 0) {
-      element.classList.remove("hizoScroll");
-    } else {
-      element.classList.add("hizoScroll");
-    }
-  };
-</script>

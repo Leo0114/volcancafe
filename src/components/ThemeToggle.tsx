@@ -18,7 +18,7 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <button onClick={handleClick} className=" mx-4">
+    <button onClick={handleClick} className=" mx-4" aria-label="Modo oscuro">
       {theme === "light" ? <MoonSht /> : <DarkSh />}
     </button>
   );
