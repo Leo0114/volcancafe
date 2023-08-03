@@ -17,8 +17,6 @@ export function getStaticPaths() {
 const { villa } = Astro.params;
 ---
 
-<Treh title=`Villas`  >
-
-  <div class=" text-9xl">¡Buen chico, {villas}!</div>
+<Treh title=`Villas ${villas}`>
+  <div class="text-9xl">¡Buen chico, {villas}!</div>
 </Treh>
-
