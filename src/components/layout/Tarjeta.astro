@@ -7,9 +7,10 @@ export interface Props {
   precio: string;
   huespedes: number;
   href: ImageMetadata;
+  detalles: string;
 }
 
-const { precio, nombre, lugar, href, huespedes } = Astro.props;
+const { precio, nombre, lugar, href, huespedes, detalles } = Astro.props;
 ---
 
 <div
@@ -49,11 +50,12 @@ const { precio, nombre, lugar, href, huespedes } = Astro.props;
     </p>
 
     <div class="flex items-center justify-between py-2">
-      <span class="font-bold text-amber-600 dark:text-amber-400">${precio}</span>
+      <span class="font-bold text-amber-600 dark:text-amber-400">${precio}</span
+      >
       <button
         class="dark:bg-zinc-500 dark:text-zinc-200 px-2 py-1 text-md font-bold text-zinc-900 transition-colors duration-300 transform bg-zinc-300 rounded hover:bg-zinc-200 focus:bg-zinc-400 focus:outline-none"
       >
-        <a href="#">Ver detalles</a></button
+        <a href={detalles}>Ver detalles</a></button
       >
     </div>
   </div>

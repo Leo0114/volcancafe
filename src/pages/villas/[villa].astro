@@ -1,0 +1,24 @@
+---
+import { villas } from "@data/villas";
+import Treh from "@layouts/Treh.astro";
+export function getStaticPaths() {
+  function getVillasObjeto(objArray) {
+    let array1 = [];
+    objArray.forEach((obj) => {
+      array1.push({ params: { villa: obj.nombre } });
+    });
+    return array1;
+  }
+  const villasTotales = getVillasObjeto(villas);
+
+  return villasTotales;
+}
+
+const { villa } = Astro.params;
+---
+
+<Treh title=`Villas`  >
+
+  <div class=" text-9xl">¡Buen chico, {villas}!</div>
+</Treh>
+

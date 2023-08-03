@@ -1,11 +1,12 @@
-import alcatras from "@assets/layout/villas.webp"
-import bugan from "@assets/villas/bugambilia.webp"
-import laurel from "@assets/villas/Laurel.webp"
+import alcatras from "@assets/layout/villas.webp";
+import bugan from "@assets/villas/bugambilia.webp";
+import laurel from "@assets/villas/Laurel.webp";
 export const procesarVillas = (villas: any) => {};
 
 export const villas = [
   {
     imagen: alcatras,
+    detalles: "/volcancafe/villas/Alcatraces",
     nombre: "Alcatraces",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 4,
@@ -20,12 +21,14 @@ export const villas = [
     fechasE: "Navidad y Año nuevo",
     fechasEminimoNoches: 2,
     fechasEPrecio: "3850",
+    texto: "",
     promocion: "Preguntar por precios al ser menos de 4 personas",
     amenidades: ["Cocina equipada", "TV", "Wifi", "Estacionamiento"],
     reglas: [""],
   },
   {
     imagen: bugan,
+    detalles: "/volcancafe/villas/Buganvilias",
     nombre: "Buganvilias",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 6,
@@ -46,6 +49,7 @@ export const villas = [
   },
   {
     imagen: laurel,
+    detalles: "/volcancafe/villas/Laureles",
     nombre: "Laureles",
     ubicacion: "Cofradía de Suchitlán, Comala",
     huespedes: 4,

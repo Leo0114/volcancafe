@@ -10,31 +10,26 @@ interface Props {
 const { src, content, href } = Astro.props;
 ---
 
-<div
-  class="relative flex  flex-col rounded-xl  text-zinc-800 shadow-lg dark:bg-zinc-700 dark:text-zinc-200 bg-zinc-100 transition-colors duration-200 w-auto"
+<a
+  href={href}
+  class="relative h-96 overflow-hidden rounded-xl text-zinc-800 group transition-colors duration-200 items-end inset-0"
 >
+  <ProcesarImg
+    img={src}
+    imgClass="h-full w-full object-cover shadow-sm  object-cover transition-all  duration-300 group-hover:scale-125 absolute object-cover object-center"
+    calida="mid"
+    alt="Estancias"
+  />
+
   <div
-    class="relative mx-2 mt-2 h-72 overflow-hidden rounded-xl bg-zinc-100  text-zinc-800 group transition-colors duration-200"
+    class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
   >
-    <ProcesarImg
-      img={src}
-      imgClass="h-full w-full object-cover shadow-sm  object-cover transition group-hover:scale-125 duration-500"
-      calida="mid"
-      alt="Estancias"
-    />
-    <div
-      class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60"
-    >
+    <div class="justify-end items-end flex">
+      <span
+        class="relative text-xl mr-5 my-2 inline-block text-zinc-200  md:mr-5 md:text-xl font-bold"
+      >
+        {content}
+      </span>
     </div>
   </div>
-  <div class="p-4">
-    <div class="flex items-center justify-center space-x-2">
-      <p class="block font-sans font-medium leading-relaxed text-2x">
-        <a
-          class="hover:text-lime-700 underline-offset-4 hover:underline dark:text-lime-500"
-          href={href}>{content}</a
-        >
-      </p>
-    </div>
-  </div>
-</div>
+</a>

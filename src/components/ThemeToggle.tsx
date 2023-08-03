@@ -1,5 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
-import { DarkSh, MoonSht } from "./LosIconos";
+import { DarkSh, MoonSht } from "@components/layout/LosIconos";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
